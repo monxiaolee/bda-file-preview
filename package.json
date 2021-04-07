@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitee.com:e56buy/xd-file-preview.git"
+    "url": "git@github.com:monxiaolee/bda-file-preview.git"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.12.0",
