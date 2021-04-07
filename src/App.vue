@@ -54,9 +54,9 @@
           //url: 'https://testimg.tiangongy.com/100601/12d7e6a9b0b9169b800fbb29061212c2', //pptx
           //url: 'https://testimg.tiangongy.com/100601/ce44c69f3075334e6c624b8180a42804', //doc,
           //url: 'https://testimg.tiangongy.com/100601/3b85b4f1c3accdb4bb9f7e42e1f9070e',
-          url: 'http://storage.xuetangx.com/public_assets/xuetangx/PDF/PlayerAPI_v1.0.6.pdf',
+          url: 'http://storage.xuetangx.com/public_assets/xuetangx/PDF/PlayerAPI_v1.0.6.pdf'
           //url:'https://jfb-public-images.oss-cn-qingdao.aliyuncs.com/admin-upload/202101052326075832.mp3',
-          fid: 'aadadads'
+          // fid: 'aadadads'
         })
       },
     }
