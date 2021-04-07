@@ -1,0 +1,84 @@
+{
+  "name": "bda-file-preview",
+  "version": "1.1.3",
+  "private": false,
+  "description": "vue 文件在线预览展示功能，支持文件（PDF，PNG，JPEG，JPG，GIF，DOC，DOCX，PPT，PPTX，XLS，XLSX）",
+  "scripts": {
+    "library": "vue-cli-service build --no-clean --target lib --name gxd --dest lib --entry src/install.js",
+    "library:dev": "vue-cli-service build --no-clean --target lib --name gxdSource --dest lib --entry src/install.js",
+    "remove": "rm ./lib/gxdSource.common.js && rm ./lib/gxdSource.umd.min.js && rm ./lib/gxd.common.js &&  rm ./lib/gxd.umd.js && rm ./lib/demo.html",
+    "build": "npm run library && npm run library:dev && npm run remove",
+    "dev": "vue-cli-service serve",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^2.6.10",
+    "downloadjs": "^1.4.7",
+    "md5.js": "^1.3.5",
+    "vue": "^2.6.10",
+    "vue-pdf": "^4.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:e56buy/xd-file-preview.git"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.12.0",
+    "@vue/cli-plugin-eslint": "^3.12.0",
+    "@vue/cli-service": "^3.12.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-template-compiler": "^2.6.10",
+    "sass": "^1.28.0",
+    "sass-loader": "^10.0.5",
+    "script-ext-html-webpack-plugin": "^2.1.5",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "require-context": "^1.1.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1"
+  },
+  "keywords": [
+    "bda",
+    "bda-file-preview",
+    "pdf",
+    "pdf-vue",
+    "pdf-vue-preview",
+    "pdf",
+    "pdf vue",
+    "pdf vue preview",
+    "pdf在线预览",
+    "file",
+    "file-preview",
+    "file-vue-preview",
+    "doc docx",
+    "ppt pptx",
+    "xls xlsx",
+    "doc,docx在线预览",
+    "ppt,pptx在线预览",
+    "xls,xlsx在线预览"
+  ],
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
