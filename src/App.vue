@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>列表展示</h1>
-    <xd-file-list-preview :list="list" @remove="handleRemoveClick"></xd-file-list-preview>
+    <bda-file-list-preview :list="list" @remove="handleRemoveClick"></bda-file-list-preview>
     <hr>
     <h1>文件预览模式</h1>
     <a @click="handleClick" style="color: #4285f4">9958ff80d202f91b347b14b5c56f14e811</a>
@@ -9,19 +9,19 @@
 </template>
 
 <script>
-  import XdFileListPreview from "@/components/XdFileListPreview";
+  import BdaFileListPreview from "@/components/BdaFileListPreview";
 
   export default {
     name: 'app',
-    components: {XdFileListPreview},
+    components: {BdaFileListPreview},
     data() {
       return {
         list: [
-          {url: 'https://testimg.tiangongy.com/100601/9958ff80d202f91b347b14b5c56f14e811'},
-          {url: 'https://testimg.tiangongy.com/100601/a024b86760bb1ff3b38f25ae2e0b9bdf'},
-          {url: 'https://testimg.tiangongy.com/100601/3b85b4f1c3accdb4bb9f7e42e1f9070e', name: 'aaaa'},
+          {url: ''},
+          {url: ''},
+          {url: '', name: 'aaaa'},
           {
-            url: 'http://storage.xuetangx.com/public_assets/xuetangx/PDF/PlayerAPI_v1.0.6.pdf',
+            url: '',
             name: 'aaaa',
             fid: 'aadadads'
           },
@@ -49,14 +49,7 @@
        */
       handleClick() {
         this.$preview({
-          //url: 'https://testimg.tiangongy.com/100601/a024b86760bb1ff3b38f25ae2e0b9bdf', //图片
-          //url: 'https://testimg.tiangongy.com/100601/9958ff80d202f91b347b14b5c56f14e8', // xlsx
-          //url: 'https://testimg.tiangongy.com/100601/12d7e6a9b0b9169b800fbb29061212c2', //pptx
-          //url: 'https://testimg.tiangongy.com/100601/ce44c69f3075334e6c624b8180a42804', //doc,
-          //url: 'https://testimg.tiangongy.com/100601/3b85b4f1c3accdb4bb9f7e42e1f9070e',
-          url: 'http://storage.xuetangx.com/public_assets/xuetangx/PDF/PlayerAPI_v1.0.6.pdf'
-          //url:'https://jfb-public-images.oss-cn-qingdao.aliyuncs.com/admin-upload/202101052326075832.mp3',
-          // fid: 'aadadads'
+          url: ''
         })
       },
     }

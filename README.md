@@ -8,16 +8,16 @@ vue 文件在线预览展示功能，支持文件（PDF，PNG，JPEG，JPG，GIF
 #### 安装
 ```bash
 
-npm i bda-file-preview --save --registry
+npm i bda-file-preview --save
 ```
 
 #### 插件全局引用
 ``` javascript
 
-import vueFilePreview from 'bda-file-preview';
+import bdaFilePreview from 'bda-file-preview';
 
 //初始化自定义插件，（pdf.js,worker.js文件建议放在本地服务器),cdn有可能不稳定
-Vue.use(vueFilePreview,{
+Vue.use(bdaFilePreview,{
     pdf: 'pdf.min.js', //pdf插件
     worker:'pdf.worker.min.js',//pdf.work插件
 });

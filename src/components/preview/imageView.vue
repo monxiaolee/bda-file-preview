@@ -29,7 +29,7 @@
       <div class="img-preview-error" v-if="!options.status" @click="closeHandle(options.ele)">
         <div class="img-preview-error-content">
           <div class="img-preview-error-ico"><i class="iconfont iconwenjian"></i></div>
-          <div class="img-preview-error-tips">哎哟！我们无法加载该文件。</div>
+          <div class="img-preview-error-tips">无法加载该文件。</div>
           <div class="img-preview-error-url" v-html="options.url"></div>
         </div>
       </div>

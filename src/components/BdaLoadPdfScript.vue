@@ -1,7 +1,7 @@
 <template></template>
 <script>
   export default {
-    name: 'XdLoadPdfScript',
+    name: 'BdaLoadPdfScript',
     props: {
       pdf: {
         type: String,

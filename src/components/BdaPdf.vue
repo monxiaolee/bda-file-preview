@@ -1,16 +1,16 @@
 <template>
   <div>
     <div ref="parent"></div>
-    <xd-load-pdf-script :pdf="$xdOptions['pdf']" :worker="$xdOptions['worker']" @load="handleLoad"></xd-load-pdf-script>
+    <bda-load-pdf-script :pdf="$xdOptions['pdf']" :worker="$xdOptions['worker']" @load="handleLoad"></bda-load-pdf-script>
   </div>
 </template>
 
 <script>
-  import XdLoadPdfScript from "./XdLoadPdfScript";
+  import BdaLoadPdfScript from "./BdaLoadPdfScript";
 
   export default {
-    name: 'XdPdf',
-    components: {XdLoadPdfScript},
+    name: 'BdaPdf',
+    components: {BdaLoadPdfScript},
     props: {
       fileUrl: {
         type: Blob,

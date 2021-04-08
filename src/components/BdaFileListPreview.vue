@@ -19,7 +19,7 @@
   import {iconData} from "@/components/contact";
 
   export default {
-    name: "XdFileListPreview",
+    name: "BdaFileListPreview",
     props: {
       list: {
         type: Object | Array,

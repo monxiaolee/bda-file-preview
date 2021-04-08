@@ -11,11 +11,11 @@
       <div class="pdf-preview__title-close" @click="closeHandle(options.ele)"><i class="fileIconfont iconwrong"></i></div>
     </div>
     <div class="pdf-preview__content" :style="`width: ${getWdith}`">
-      <xd-pdf
+      <bda-pdf
         :file-url="info['response']"
         @num-pages="setTotalNumPages"
         :current-pages="page"
-      ></xd-pdf>
+      ></bda-pdf>
     </div>
     <div class="img-preview__toolbar">
       <span>
@@ -32,10 +32,10 @@
 <script>
   import helper from "./helper";
   import download from 'downloadjs';
-  import XdPdf from "../XdPdf";
+  import BdaPdf from "../BdaPdf";
 
   export default {
-    name: "xdPdfPreview",
+    name: "BdaPdfPreview",
     props: {
       options: {
         type: Object|null,
@@ -44,7 +44,7 @@
         }
       },
     },
-    components: {XdPdf},
+    components: {BdaPdf},
     data() {
       return {
         src: '',
